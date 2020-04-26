@@ -1,11 +1,10 @@
 const initialState = {
-  id:null,
-  grid: [0,0,0,0,0,0,0,0,0]
+  list:[]
 }
 
 export default (state=initialState, action) => {
   switch(action.type) {
-    case 'TILES_UPDATE':
+    case 'LOGS_UPDATE':
       return {
         ...state,
         ...action.data

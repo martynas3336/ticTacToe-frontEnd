@@ -27,11 +27,19 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: '#515151',
       transition:theme.transitions.create(['background-color'], {duration:theme.transitions.duration.complex}),
     }
+  },
+
+  cellDisabled: {
+    opacity:0.6
+  },
+
+  cellWinning: {
+    backgroundColor:'#383838'
   }
 }))
 
 export default (props) => {
-  const { Tile, tiles, handleTileClick } = props;
+  const { Tile, tiles, handleTileClick, disabled, winningTiles } = props;
   const classes = useStyles();
   return (
     <TableContainer className={classes.root}>
@@ -40,7 +48,7 @@ export default (props) => {
           {[0,1,2].map(i => (
             <TableRow key={i} className={classes.row}>
               {[0,1,2].map(j => (
-                <TableCell key={j} align="center" className={classes.cell} onClick={handleTileClick(i*3+j)}>
+                <TableCell key={j} align="center" className={`${classes.cell} ${disabled === true ? classes.cellDisabled : ''} ${winningTiles.includes(i*3+j) === true ? classes.cellWinning : ''}`} onClick={handleTileClick(i*3+j)} >
                   <Tile value={tiles.grid[i*3+j]} />
                 </TableCell>
               ))}

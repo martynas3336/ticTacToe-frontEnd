@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+dist/
+
 webpack.common.js
 webpack.dev.js
 webpack.prod.js

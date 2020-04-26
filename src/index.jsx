@@ -20,8 +20,6 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import darkTheme from '@src/asset/theme/darkTheme';
 import '@resources/asset/scss/style.scss';
 
-console.log(darkTheme);
-
 ReactDOM.render(
   <Router history={createHistory()}>
     <Provider store = { store }>

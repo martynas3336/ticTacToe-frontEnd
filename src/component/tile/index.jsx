@@ -4,8 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   root: {
     userSelect:'none',
-    minHeight:20,
-    minWidth:80
+    minHeight:80,
+    minWidth:80,
+    display:'flex',
+  	flexFirection:'row',
+  	flexWrap:'nowrap',
+  	justifyContent:'center',
+  	alignItems:'center',
+  	alignContent:'center',
   }
 }))
 
@@ -19,7 +25,9 @@ export default (props) => {
 
   return (
     <div className={classes.root}>
-      {visualVal}
+      <span>
+        {visualVal}
+      </span>
     </div>
   )
 }
