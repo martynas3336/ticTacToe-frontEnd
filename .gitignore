@@ -8,10 +8,6 @@ lerna-debug.log*
 
 dist/
 
-webpack.common.js
-webpack.dev.js
-webpack.prod.js
-
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
