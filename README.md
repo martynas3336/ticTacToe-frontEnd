@@ -9,7 +9,7 @@ This is the front-end side of Tic Tac Toe game created with the help of `react`.
 3. Run docker.
 ```
 docker-compose up -d
-docker exec -it client_client_1 sh
+docker exec -it tictactoe-frontend_client_1 sh
 ```
 4. Rebuild `node-sass` module because of potential binding error with `npm rebuild node-sass`.
 5. Build app with `npm run build`.
