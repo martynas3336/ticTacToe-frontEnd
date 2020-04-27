@@ -11,7 +11,7 @@ This is the front-end side of Tic Tac Toe game created with the help of `react`.
 docker-compose up -d
 docker exec -it tictactoefrontend_client_1 sh
 ```
-4. Install dependencies with `npm install`
+4. Install dependencies with `npm install`.
 5. Build app with `npm run build`.
 6. Start app with `npm run start`.
 
