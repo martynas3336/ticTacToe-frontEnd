@@ -4,16 +4,17 @@
 This is the front-end side of Tic Tac Toe game created with the help of `react`. Its purpose is to save serve a Tic Tac Toe layout with interactive actions and communicate and sync state from the api.
 
 ## Installation
-1. Clone this repository with `git clone`.
-2. Edit `docker-compose.yml` and edit `ports` per your need.
-3. Run docker.
+1. Clone this repository with `git clone https://github.com/martynas3336/ticTacToe-frontEnd.git`.
+2. Cd into the cloned folder with `cd ticTacToe-frontEnd`.
+3. Edit `docker-compose.yml` and edit `ports` per your need.
+4. Run docker.
 ```
 docker-compose up -d
 docker exec -it tictactoefrontend_client_1 sh
 ```
-4. Install dependencies with `npm install`.
-5. Build app with `npm run build`.
-6. Start app with `npm run start`.
+5. Install dependencies with `npm install`.
+6. Build app with `npm run build`.
+7. Start app with `npm run start`.
 
 ## Additional actions
 You may have to setup a higher level webserver, which would reverse proxy to this application.
