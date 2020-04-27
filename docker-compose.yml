@@ -1,0 +1,9 @@
+version: '2'
+services:
+  client:
+    build: .
+    ports:
+     - "3020:3020"
+    volumes:
+    - .:/client
+    command: tail -f /dev/null
