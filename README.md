@@ -16,6 +16,19 @@ docker exec -it tictactoefrontend_client_1 sh
 6. Build app with `npm run build`.
 7. Start app with `npm run start`.
 
+## Quick Installation
+
+```
+git clone https://github.com/martynas3336/ticTacToe-frontEnd.git
+cd ticTacToe-frontEnd
+docker-compose up -d
+docker exec -it tictactoefrontend_client_1 sh
+npm install
+npm run build
+npm run start
+exit
+```
+
 ## Additional actions
 You may have to setup a higher level webserver, which would reverse proxy to this application.
 
